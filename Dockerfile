@@ -9,6 +9,7 @@ RUN cd /tmp/tor-${VERSION} && ./configure
 RUN cd /tmp/tor-${VERSION} && make
 RUN cd /tmp/tor-${VERSION} && make install
 RUN cd /tmp/tor-${VERSION} && make clean
+RUN cd /tmp/tor-${VERSION} && make dist-gzip
 
 ADD ./torrc /etc/torrc
 # Allow you to upgrade your relay without having to regenerate keys

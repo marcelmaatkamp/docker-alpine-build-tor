@@ -1,7 +1,7 @@
 FROM marcelmaatkamp/alpine-build-base
 
 EXPOSE 9001
-EXPOSE 9500 
+EXPOSE 9050 
 
 ENV VERSION 0.2.5.10
 

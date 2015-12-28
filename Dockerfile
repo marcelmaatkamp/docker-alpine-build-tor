@@ -1,8 +1,7 @@
 FROM marcelmaatkamp/alpine-build-base
 
-EXPOSE 9001
 ENV VERSION 0.2.7.6
-
+EXPOSE 9001 9050
 RUN curl https://dist.torproject.org/tor-${VERSION}.tar.gz | tar xz
 
 RUN cd tor-${VERSION} && ./configure
